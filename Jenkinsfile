@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	environment{
-		PROJECT_ID = 'opensourcesw-438913'
+		PROJECT_ID = 'opensou₩rcesw-438913'
 		CLUSTER_NAME = 'opensource-sw-k8s'
 		LOCATION = 'asia-northeast3-a'
 		CREDENTIALS_ID = '6c611442-f665-4da6-8b51-9f00afed66c1'
@@ -15,7 +15,7 @@ pipeline{
 		stage("Build image"){
 			steps{
 				script{
-					myapp = docker.build("limyeeun/yorijori:${env.BUILD_ID}")
+					myapp = docker.build("imNaNye/yorijori:${env.BUILD_ID}")
 					}
 				}
 			}
